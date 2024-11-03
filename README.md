@@ -24,6 +24,41 @@ config vscode
 
 ## Loading data into spark dataframes
 
+```scala
+// import functions
+import org.apache.spark.sql.types.{StructField, StructType, StringType, DoubleType, IntegerType}
+import org.apache.spark.sql.SparkSession
+
+// spark session
+val spark = SparkSession.builder()
+                        .getOrCreate()
+
+// load data
+val df = spark.read
+              .option("header","true")
+              .option("inferSchema","true")
+              .option("delimiter",";")
+              .format("csv")
+              .load("data/bank-additional-full.csv")
+
+
+""" DATA EXPLORATION """"
+
+df.printSchema()                    // return data structure
+df.show()                           // shows dataframe records
+df.head(10)                         // return first 10 dataframe records
+df.select($"age").describe().show() // shows column statistics ("age" in example)
+df.columns                          // return dataframe columns
+
+
+""" WRITE DATAFRAME IN A FILE """
+
+df.write
+  .format("csv")
+  .mode("overwrite")
+  .option("sep", "\t")
+  .save("/tmp/my-tsv-file.csv")
+```
 
 <br>
 
