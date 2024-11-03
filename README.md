@@ -1,5 +1,4 @@
 # Processing Data with Spark Dataframes
-- Creating DEV environment
 - Loading data into spark dataframes
 - Referencing columns
 - Filtering, sorting data and applying functions
@@ -9,8 +8,8 @@
 - MAP and REDUCE functions
 - Joining data with JOIN
 - Applying grouping functions
-- Introduction to spark SQL
 - Data partitioning
+- Introduction to spark SQL
 - Introduction to datasets
 - Processing data directly in RDDs
 - Shared variables
