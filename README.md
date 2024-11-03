@@ -1,18 +1,95 @@
 # Processing Data with Spark Dataframes
 
-### creating dev environment
-### loading data into spark dataframes
-### referencing columns
-### filtering, sorting data and applying functions
-### expressions and sampling
-### missing values ​​and replace
-### expressions and UDF
-### MAP and REDUCE functions
-### joining data with JOIN
-### applying grouping functions
-### ??? introduction to spark SQL
-### data partitioning
-### ??? introduction to datasets and spark SQL
-### processing data directly in RDDs
-### shared variables
-### ??? introduction to spark SQL
+<br>
+
+## Creating DEV environment
+
+install packages
+```zsh
+brew install openjdk@11
+```
+```zsh
+brew install scala
+```
+```zsh
+brew install apache-spark
+```
+
+<br>
+
+config vscode
+  - install extensions `Scala Syntax (official)` and `Code Runner`
+
+<br>
+
+## Loading data into spark dataframes
+
+
+<br>
+
+## Referencing columns
+
+
+<br>
+
+## Filtering, sorting data and applying functions
+
+
+<br>
+
+## Expressions and sampling
+
+
+<br>
+
+## Missing values ​​and replace
+
+
+<br>
+
+## Expressions and UDF
+
+
+<br>
+
+## MAP and REDUCE functions
+
+
+<br>
+
+## Joining data with JOIN
+
+
+<br>
+
+## Applying grouping functions
+
+
+<br>
+
+## ??? Introduction to spark SQL
+
+
+<br>
+
+## Data partitioning
+
+
+<br>
+
+## ??? Introduction to datasets and spark SQL
+
+
+<br>
+
+## Processing data directly in RDDs
+
+
+<br>
+
+## Shared variables
+
+
+<br>
+
+## ??? Introduction to spark SQL
