@@ -9,6 +9,15 @@ install packages
 brew install openjdk@11
 ```
 ```zsh
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+```
+```zsh
+source ~/.zshrc
+```
+
+<br>
+
+```zsh
 brew install scala
 ```
 ```zsh
