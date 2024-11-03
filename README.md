@@ -76,6 +76,34 @@ df.write
 
 ## Referencing columns
 
+```scala
+""" IMPORT FUNCTIONS """"
+
+import org.apache.spark.sql.functions.{col, column, expr}
+
+
+""" SELECT COLUMNS """"
+
+df.select("age").show(5)
+
+
+""" CREATE, REMOVE AND ALTER COLUMNS """
+
+// create a new columns with a constant value using "lit" function
+val data_1 = data.withColumn("new_column", lit(1)) 
+
+// add new column
+val age_filter = expr("age < 40")
+data.select("age", "y").withColumn("age_under_40", age_filter)
+    .show(5)
+
+// rename column
+data.select(expr("age as idade")).show(5)
+
+// drop column
+val df_1 = data.drop("age")
+df_1.columns
+```
 
 <br>
 
