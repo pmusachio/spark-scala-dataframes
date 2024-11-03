@@ -34,7 +34,8 @@ config vscode
 ## Loading data into spark dataframes
 
 ```scala
-// import functions
+""" IMPORT FUNCTIONS """"
+
 import org.apache.spark.sql.types.{StructField, StructType, StringType, DoubleType, IntegerType}
 import org.apache.spark.sql.SparkSession
 
@@ -42,7 +43,9 @@ import org.apache.spark.sql.SparkSession
 val spark = SparkSession.builder()
                         .getOrCreate()
 
-// load data
+
+""" LOAD DATA """"
+
 val df = spark.read
               .option("header","true")
               .option("inferSchema","true")
